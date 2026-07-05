@@ -3,10 +3,10 @@ import "./globals.css";
 
 const baloo = Baloo_2({ subsets: ["latin"], variable: "--font-baloo", weight: ["500", "600", "700", "800"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"FoodEstablishment","name":"Jajanan Bu Rina","description":"Jajanan pasar & rice bowl rumahan","url":"https://linkinbio-jajan.vercel.app","areaServed":"ID"};
+const __jsonld = {"@context":"https://schema.org","@type":"FoodEstablishment","name":"Jajanan Bu Rina","description":"Jajanan pasar & rice bowl rumahan","url":"https://jajan.pintuweb.com","areaServed":"ID"};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-jajan.vercel.app"),
+  metadataBase: new URL("https://jajan.pintuweb.com"),
   title: "Jajanan Bu Rina — Pesan Sekarang",
   description: "Link in bio Jajanan Bu Rina: jajanan pasar & rice bowl rumahan. Menu, promo, dan pesan antar dalam satu papan.",
   applicationName: "Jajanan Bu Rina",
@@ -14,11 +14,11 @@ export const metadata = {
   authors: [{ name: "Jajanan Bu Rina" }],
   creator: "Jajanan Bu Rina",
   publisher: "Jajanan Bu Rina",
-  alternates: { canonical: "https://linkinbio-jajan.vercel.app" },
+  alternates: { canonical: "https://jajan.pintuweb.com" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-jajan.vercel.app",
+    url: "https://jajan.pintuweb.com",
     siteName: "Jajanan Bu Rina",
     title: "Jajanan Bu Rina — Pesan Sekarang",
     description: "Link in bio Jajanan Bu Rina: jajanan pasar & rice bowl rumahan. Menu, promo, dan pesan antar dalam satu papan.",

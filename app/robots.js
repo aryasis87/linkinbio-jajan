@@ -1,7 +1,7 @@
 export default function robots() {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://linkinbio-jajan.vercel.app/sitemap.xml",
-    host: "https://linkinbio-jajan.vercel.app",
+    sitemap: "https://jajan.pintuweb.com/sitemap.xml",
+    host: "https://jajan.pintuweb.com",
   };
 }
