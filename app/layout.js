@@ -7,10 +7,10 @@ const __jsonld = {"@context":"https://schema.org","@type":"FoodEstablishment","n
 
 export const metadata = {
   metadataBase: new URL("https://linkinbio-jajan.vercel.app"),
-  title: "Jajanan Bu Rina — Pesan Sekarang",
-  description: "Link in bio Jajanan Bu Rina: jajanan pasar & rice bowl rumahan. Menu, promo, dan pesan antar dalam satu papan.",
+  title: { default: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung", template: "%s — Jajanan Bu Rina" },
+  description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",
   applicationName: "Jajanan Bu Rina",
-  keywords: ["link in bio", "jajanan", "kuliner rumahan", "pesan antar", "umkm kuliner"],
+  keywords: ["jajanan pasar bandung", "rice bowl murah", "snack box acara", "hampers kue", "link in bio warung"],
   authors: [{ name: "Jajanan Bu Rina" }],
   creator: "Jajanan Bu Rina",
   publisher: "Jajanan Bu Rina",
@@ -20,14 +20,14 @@ export const metadata = {
     locale: "id_ID",
     url: "https://linkinbio-jajan.vercel.app",
     siteName: "Jajanan Bu Rina",
-    title: "Jajanan Bu Rina — Pesan Sekarang",
-    description: "Link in bio Jajanan Bu Rina: jajanan pasar & rice bowl rumahan. Menu, promo, dan pesan antar dalam satu papan.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Jajanan Bu Rina — Pesan Sekarang" }],
+    title: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung",
+    description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jajanan Bu Rina — Pesan Sekarang",
-    description: "Link in bio Jajanan Bu Rina: jajanan pasar & rice bowl rumahan. Menu, promo, dan pesan antar dalam satu papan.",
+    title: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung",
+    description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -39,8 +39,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
-      <body className={`${baloo.variable} antialiased`}>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
+    <html lang="id" className={`${baloo.variable}`}>
+      <body className="antialiased">{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
         </body>
     </html>
   );
